@@ -135,7 +135,7 @@ def predict():
         # Get the image from post request
         img = base64_to_pil(request.json)
         img1 = base64_to_pil(request.json)
-        cam(img1)
+        #cam(img1)
         preds = model_predict(img, model)
         # Process your result for human
         pred_class =  decode_predictions(preds)  # ImageNet Decode
